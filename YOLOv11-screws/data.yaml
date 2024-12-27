@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['Broken', 'Normal']
+
+roboflow:
+  workspace: nova-yfkjb
+  project: screws-od
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/nova-yfkjb/screws-od/dataset/4
