@@ -1,0 +1,29 @@
+# Augmentation-related hyperparameters
+hsv_h: 0.02                     # Hue variation
+hsv_s: 0.6                      # Saturation variation
+hsv_v: 0.3                      # Brightness variation
+degrees: 0                      # Rotation range
+translate: 0.2                  # Translation range
+scale: 0.4                      # Scaling range
+shear: 2.0                      # Shear range
+perspective: 0.01               # Perspective distortion
+flipud: 0.5                     # Vertical flip probability
+fliplr: 0.5                     # Horizontal flip probability
+mosaic: 1.0                     # Mosaic augmentation
+mixup: 0.1                      # Mixup augmentation
+copy_paste: 0.2                 # Copy-paste augmentation
+
+# Loss hyperparameters
+box: 0.05                       # Box loss gain
+cls: 0.5                        # Classification loss gain
+cls_pw: 1.0                     # Classification positive weight
+obj: 1.0                        # Objectness loss gain
+obj_pw: 1.0                     # Objectness positive weight
+iou_t: 0.2                      # IoU threshold for training
+anchor_t: 4.0                   # Anchor-multiple threshold
+
+# Advanced training settings
+fl_gamma: 0.0                   # Focal Loss gamma (use 0 for standard loss)
+label_smoothing: 0.0            # Label smoothing                     # Early stopping patience (in epochs)
+augmentation: true              # Enable augmentations
+seed: 42                        # Random seed for reproducibility
